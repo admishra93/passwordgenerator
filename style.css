@@ -1,1 +1,26 @@
+body {
+
+  background-image: url(images/cartographer.png);
+  background-repeat: repeat;
+
+}
+
+.topContainer {
+
+  background-color: #f8f9fa;
+
+}
+
+.navbar-brand {
+
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Crimson Text', serif;
+}
+
+.separator {
+
+  padding: 10px;
+
+}   
 
