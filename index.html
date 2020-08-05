@@ -1,1 +1,166 @@
+<!DOCTYPE html>
 
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Secure Password Generator</title>
+        <meta name="description" content="Simple website designed to help create passwords.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+
+
+        <div class="topContainer">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-12 col-xs-6">
+
+                        <nav class="navbar navbar-light bg-light">
+                            <span class="navbar-brand mb-0 h1">Password Generator</span>
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="card" style="width: 100%;">
+
+                        <div class="card-body">
+                          <h5 class="card-title">Generate a Secure Password</h5>
+                          
+                          <p class="card-text">Use this site to generate a customizable password.
+                              <br>
+                              Passwords will not be saved, and will be deleted after leaving the page. 
+                            </p>
+
+                        </div>
+
+                      </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-12">
+
+                    <div class="card" style="width: 100%;">
+
+                        <div class="card-body">
+        
+                          <h5 class="card-title">Password Options</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Choose options for characters in the password</h6>
+
+                          <form>
+
+                            <div class="container">
+
+                                <div class="row">
+
+                                    <div class="col-lg-6">
+
+                                        <div class="form-group">
+                                            <label for="length">Password Length</label>
+                                            <input type="number" class="form-control" id="length" aria-describedby="passLength" min="8" max="128" required>
+                                            <small id="emailHelp" class="form-text text-muted">Choose between 8 and 128 characters</small>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary" id="generate">Generate Password</button>
+
+                                    </div>
+
+                                    <div class="col-lg-6">
+            
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="uppercase">
+                                            <label class="form-check-label" for="uppercase">Uppercase Letters</label>
+                                        </div>
+            
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="lowercase">
+                                            <label class="form-check-label" for="lowercase">Lowercase Letters</label>
+                                        </div>
+            
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="numbers">
+                                            <label class="form-check-label" for="numbers">Numbers</label>
+                                        </div>
+            
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="symbols">
+                                            <label class="form-check-label" for="Symbols">ASCII Symbols</label>
+                                        </div>
+                                        
+                                        <!-- DEBUG: Button to check if I called my boxes right -->
+                                        <!-- <button type="submit" class="btn btn-primary" id="check">check teh boxes :3</button> -->
+
+                                        <!-- DEBUG: Button to see the array generated for the password characters
+                                        <button type="submit" class="btn btn-primary" id="chars">owo</button> -->
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                          </form>
+
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+        
+                        
+                    </div>
+        </div>
+
+        <script src="script.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
